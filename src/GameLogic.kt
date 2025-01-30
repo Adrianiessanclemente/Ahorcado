@@ -45,9 +45,9 @@ fun userEntry(): String {
 }
 
 
-//Función que comprueba la entrada del usuario y la compara con el número secreto.
-//Si la cifra no esta en el número secreto se vera rojo, si esta en el número pero en la posción
-//incorrecta se vera en amarrilo y si esta en el numero y en la posicion correcta sera verde.
+//Función que comprueba la entrada del usuario y la compara con la palabra secreta.
+//Si la letra no esta en la palabra secreta se vera rojo, si esta en ella pero en la posción
+//incorrecta se vera en amarrilo y si esta  en la posicion correcta sera verde.
 fun checkWords(secretWord:String, attemp:String):Pair<Int,Int>  {
 
     var correctLettersAndPosition = 0
@@ -151,7 +151,7 @@ fun play() {
 
 
         if (correctLettersAndPosition == secretWord.length) {
-            println("¡Felicidades! Adivinaste el número secreto: $secretWord")
+            println("¡Felicidades! Adivinaste la palabra secreta: $secretWord")
             println("Seleccione una opción:")
             println("1. Jugar")
             println("2. Ver partida anterior")
@@ -162,7 +162,7 @@ fun play() {
         }
 
         if (attemps == maxAattepms) {
-            println("¡Lo siento! Has agotado tus intentos. La palabra: $secretWord")
+            println("¡Lo siento! Has agotado tus intentos. La palabra era: $secretWord")
             println("Seleccione una opción:")
             println("1. Jugar")
             println("2. Ver partida anterior")
