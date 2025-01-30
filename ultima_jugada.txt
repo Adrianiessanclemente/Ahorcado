@@ -1,2 +1,2 @@
-Número secreto: gallo
+Número secreto: tigre
 Intentos: 7
